@@ -7,8 +7,8 @@ import java.util.Set;
 
 public class Service {
 	
-	public int counter = 0;
-	public int countGenre = 0;
+	private int counter = 0;
+	protected int countGenre = 0;
 
 	HashMap<Integer, Movie> movieList = new HashMap<Integer, Movie>();
 	
