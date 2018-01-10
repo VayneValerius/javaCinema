@@ -8,6 +8,7 @@ import java.util.Set;
 public class Service {
 	
 	public int counter = 0;
+	public int countGenre = 0;
 
 	HashMap<Integer, Movie> movieList = new HashMap<Integer, Movie>();
 	
@@ -34,6 +35,19 @@ public class Service {
 	public void removeMovie(int index) {
 		movieList.remove(index);
 		showMovies();
+	}
+	
+	public void checkgenreAmount(String genre)
+	{
+		countGenre = 0;
+		for(int i = 0; i < movieList.size(); i++)
+		{
+			if(movieList.get(i).getGenre().equals(genre))
+			{
+				countGenre ++;
+			}
+			System.out.println(countGenre);
+		}
 	}
 
 }

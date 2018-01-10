@@ -12,5 +12,4 @@ public class jsonConversion {
 		cinemaJSON.put("movie", hm);
 		System.out.print(cinemaJSON);
 	}
-
 }

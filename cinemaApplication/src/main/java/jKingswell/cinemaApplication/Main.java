@@ -13,9 +13,10 @@ public class Main {
 		cinemaService.addMovie(movie2);
 		cinemaService.showMovies();
 		cinemaService.getMovie(1);
-		cinemaService.removeMovie(0);
+		//cinemaService.removeMovie(0);
 		
 		convert.convertHashMap(cinemaService.movieList);
+		cinemaService.checkgenreAmount("Comedy");
 	}
 
 }
